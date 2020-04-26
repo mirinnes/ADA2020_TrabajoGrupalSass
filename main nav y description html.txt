@@ -1,0 +1,38 @@
+<nav class="mainNav">
+        <a href="#">Getting started</a>
+        <a href="#">Create account</a>
+        <a href="#">Download sdk</a>
+        <a href="#">Tutorials</a>
+    </nav>
+     
+
+
+
+
+
+<section class="description">
+    <section class="card">
+        <i class="fas fa-tools"></i>
+        <h2>Built specially for mobile game developers</h2>
+        <p>The Playphone SDK is built for mobile game developers.
+           It is extremely lightweight and takes minutes to integrate. Further, you need to integrate only once.
+        </p>
+    </section>
+    <section class="card">
+        <i class="fas fa-tools"></i>
+        <h2>Reach highly targeted mobile gamers</h2>
+        <p>Playphone is a games-only network fostering an ecosystem of highly qualified users that love playing
+            mobile games. You won't find a better way to reach untapped mobile gamers globally
+        </p>
+    </section>
+    <section class="card">
+        <i class="fas fa-tools"></i>
+        <h2>Go beyond Google Play</h2>
+        <p>In high-growth emerging markets, we partner with the leading local OEMs, carriers and distributors in to drive
+           installs for your games where Google Play can't
+        </p>
+    </section>
+</section>
+
+___________________
+____________
