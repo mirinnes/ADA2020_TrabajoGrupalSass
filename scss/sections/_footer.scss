@@ -1,0 +1,31 @@
+footer { 
+    .footer-link {
+        color: $azul;
+        text-decoration: none;
+    }
+    color: #8e9ea9;;
+    padding: 0 6em;
+    .row {
+
+        padding: 0;
+        margin: 2em auto;
+        
+        display: flex;
+        justify-content: space-between;
+        ul {
+            padding: 0;
+        }
+        ul li { 
+            list-style: none;
+        }
+        .social {
+            display: inline-block;
+            margin-left: 150px;
+
+        }
+    }
+    .end {
+        border-top: 2px solid #eee;
+        padding-top: 25px;
+    }
+}
