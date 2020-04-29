@@ -1,0 +1,14 @@
+<nav class="mainNav">
+        <a href="#">Getting started</a>
+        <a href="#">Create account</a>
+        <a href="#">Download sdk</a>
+        <a href="#">Tutorials</a>
+    </nav>
+     
+
+
+
+
+
+___________________
+____________
