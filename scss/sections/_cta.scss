@@ -1,0 +1,11 @@
+@import "../abstract/variables";
+@import "../mixins/mixins";
+
+#CTA{
+    height: 200px;
+    @include display-center;
+    h1 { 
+        font-family: $main-font;
+        font-size: $text-l;
+    }
+}
