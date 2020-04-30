@@ -20,6 +20,15 @@ footer {
     border-top: 2px solid #eee;
     padding-top: 25px; }
 
+.opinions {
+  height: 600px; }
+  .opinions .slide-1 {
+    height: 100%;
+    background-image: url(../../img/main-slide-4.png);
+    background-size: cover;
+    padding-left: 250px;
+    padding-top: 50px; }
+
 body {
   font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
   margin: 0; }

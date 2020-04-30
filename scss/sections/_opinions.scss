@@ -1,0 +1,13 @@
+@import "../abstract/variables";
+@import "../mixins/mixins";
+
+.opinions{
+    height: 600px;
+    .slide-1{
+        height: 100%;
+        background-image: url(../../img/main-slide-4.png);
+        background-size: cover;
+        padding-left: 250px;
+        padding-top: 50px;
+    }
+}
