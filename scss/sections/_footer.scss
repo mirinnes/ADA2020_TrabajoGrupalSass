@@ -3,29 +3,69 @@ footer {
         color: $azul;
         text-decoration: none;
     }
-    color: #8e9ea9;;
+    .summary {
+        margin-top: 5px;
+        font-size: $footer-txt-s;
+    }
+    color: #8e9ea9;
     padding: 0 6em;
     .row {
 
         padding: 0;
         margin: 2em auto;
-        
         display: flex;
         justify-content: space-between;
         ul {
+            margin: 0;
             padding: 0;
         }
         ul li { 
+            font-size: $footer-txt-s;
             list-style: none;
         }
+        
         .social {
             display: inline-block;
             margin-left: 150px;
-
+            i {
+                font-size: $text-xl;
+            }
         }
     }
     .end {
         border-top: 2px solid #eee;
+        font-size: $footer-txt-s;
         padding-top: 25px;
+    }
+    .caption {
+        color: $negro !important;
+        margin: 0;
+    }
+
+    // Form style
+    .subscribe .email {
+        width: 76%;
+        font-size: 0.875em;
+        border: 0.125em solid #e4ebec;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        line-height: 2.8em;
+        padding: 0 1em;
+    }
+
+    .subscribe > .email + button {
+        width: 17%;
+        font-size: 0.875em;
+        border: 0;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        line-height: 3em;
+        padding: 0 1em;
+        text-align: center;
+        text-transform: uppercase;
+        background: #01affe;
+        color: #fff;
+        cursor: pointer;
+        margin-left: -0.4em;
     }
 }
