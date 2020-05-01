@@ -4,6 +4,7 @@ $verde: #99ce45;
 $negro: #3e4e5c;
 $blanco: #FFFF;
 $naranja: #fe8f4f;
+$blanco-transparente: rgba(255, 255, 255, .75);
 
 
 //Tamaños de texto
@@ -23,3 +24,11 @@ $main-font: 'Montserrat', Arial, Helvetica, Tahoma, Verdana, sans-serif;
 $light: 300;
 $regular: 400;
 $bold: 600;
+
+//Paddings o margins standard
+
+$p-xsmall: 5px;
+$p-small: 10px;
+$p-med: 15px;
+$p-large: 20px;
+$p-xlarge: 30px;
