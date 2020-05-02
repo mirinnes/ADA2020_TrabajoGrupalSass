@@ -2,7 +2,7 @@
 body {
   font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
   margin: 0; }
-
+/*---------------CTA------------*/
 @media (min-width: 414px) {
   .cta-button {
     background: #99ce45;
@@ -63,28 +63,6 @@ body {
     background: #6ea319;
     color: #FFFF; } }
 
-footer {
-  color: #8e9ea9;
-  padding: 0 6em; }
-  footer .footer-link {
-    color: #01affe;
-    text-decoration: none; }
-  footer .row {
-    padding: 0;
-    margin: 2em auto;
-    display: flex;
-    justify-content: space-between; }
-    footer .row ul {
-      padding: 0; }
-    footer .row ul li {
-      list-style: none; }
-    footer .row .social {
-      display: inline-block;
-      margin-left: 150px; }
-  footer .end {
-    border-top: 2px solid #eee;
-    padding-top: 25px; }
-
 @media (min-width: 414px) {
   .cta {
     align-items: center;
@@ -99,6 +77,7 @@ footer {
     text-align: center;
     width: 45%; } }
 
+
 @media (min-width: 798px) {
   .cta {
     align-items: center;
@@ -112,6 +91,7 @@ footer {
     margin: 0 auto;
     text-align: center;
     width: 35%; } }
+
 
 @media (min-width: 955px) {
   .cta {
@@ -142,7 +122,41 @@ footer {
     width: 40%; } }
 
 
-/*-------------Cards---------------*/
+/*---------------Footer------------*/
+footer {
+  color: #8e9ea9;
+  padding: 0 6em; }
+  footer .footer-link {
+    color: #01affe;
+    text-decoration: none; }
+  footer .row {
+    padding: 0;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between; }
+    footer .row ul {
+      padding: 0; }
+    footer .row ul li {
+      list-style: none; }
+    footer .row .social {
+      display: inline-block;
+      margin-left: 150px; }
+  footer .end {
+    border-top: 2px solid #eee;
+    padding-top: 25px; }
+
+
+
+/* --------------- Description -----------------*/
+.description {
+  background-color: #FFFF;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+                   /*-----------Cards----------*/
 .card {
   margin: 30px 0;
   width: 323px;
@@ -173,18 +187,5 @@ footer {
   .card.naranja i {
     color: orange; }
 
-/*-------------Cards---------------*/
-body {
-  margin: 0;
-  font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif; }
 
-/* --------------- Description -----------------*/
-.description {
-  background-color: #FFFF;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap; }
 
