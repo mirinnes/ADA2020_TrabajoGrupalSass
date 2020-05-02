@@ -1,15 +1,50 @@
-// Abstract
+//Abstracts
 @import "./abstract/variables";
 @import "./abstract/mixins";
 
 // Components
+@import "../scss/componentes/cards";
 @import "./componentes/anchor";
+@import "./componentes/buttons";
+@import "./componentes/loader-opinions";
 
 // Sections
 @import "./sections/footer";
 @import "./sections/nav";
 
+@import "./sections/opinions";
+
+@import "./sections/cta";
+
+
+
 body {
     font-family: $main-font;
     margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- Description -----------------*/
+.description {
+    background-color: $blanco;
+    height: fit-content;
+
+    @include display-center;
+    flex-direction: row;
+	flex-wrap: wrap;
+}
+
