@@ -1,0 +1,39 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+
+.button {
+    border: none;
+    border-radius: 20px;
+    left: 33%;
+    padding: $padding-m;
+    position: absolute;
+    top: 77%;
+    transform: translate(-50%, -50%);
+    width: 40%;   
+    &.text-button {
+        color: $blanco;   
+        font-size: $text-s;
+        font-weight: $regular;
+        text-align: center; 
+        text-decoration: none;
+        text-transform: $font-uppercase; 
+        @include breakpoint-desktop {
+            font-size: $text-m;
+        }
+    }
+    @include breakpoint-tablet-1 {
+        left: 27%;
+        width: 20%; 
+    } 
+    @include breakpoint-desktop {
+        left: 25%; 
+        top: 84%; 
+        width: 18%; 
+    }
+    @include breakpoint-desktop-2 {
+        left: 22%;
+        top: 84%;
+        width: 15%;
+    }
+}

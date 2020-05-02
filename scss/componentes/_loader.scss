@@ -1,0 +1,18 @@
+@import "../abstract/variables";
+
+.loader {
+    width: 100%;
+    border: 0.8px solid $azul;
+    animation: loader 6.8s linear infinite;
+    position: absolute;
+    bottom: 1px;
+    @keyframes loader {
+        from {
+            right: 100%;
+        }
+        to {
+            right: 0;
+        }      
+    }
+}
+  

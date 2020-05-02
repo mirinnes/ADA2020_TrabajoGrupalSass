@@ -10,7 +10,8 @@ $naranja: #fe8f4f;
 $text-xl: 28px;
 $text-l: 20px;
 $text-m: 15px;
-$text-s: 9px;
+$text-s: 12px; /* agregue esta.. La necesitaba el hero */
+$text-xs: 9px;
 $text-boton-s: 10px;
 $text-boton-m: 15px;
 $text-boton-l: 20px;
@@ -23,3 +24,12 @@ $main-font: 'Montserrat', Arial, Helvetica, Tahoma, Verdana, sans-serif;
 $light: 300;
 $regular: 400;
 $bold: 600;
+
+
+/* Special font */
+$font-uppercase: uppercase;
+
+
+// Padding and Margin
+$padding-m: 10px;
+$margin-s: 6px;
