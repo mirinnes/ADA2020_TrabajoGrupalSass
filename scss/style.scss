@@ -1,7 +1,9 @@
 // Abstract
 @import "./abstract/variables";
+@import "./abstract/mixins";
 
 // Components
+@import "./componentes/anchor";
 
 // Sections
 @import "./sections/footer";
