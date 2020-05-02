@@ -1,4 +1,15 @@
+@import "../abstract/mixins";
+
 footer { 
+
+    @include breakpoint-mobile-1 {
+        padding: 0 2em;
+    }
+    @include breakpoint-tablet-1 {
+        color: #8e9ea9;
+        padding: 0 6em;
+    }
+
     .footer-link {
         color: $azul;
         text-decoration: none;
@@ -7,17 +18,28 @@ footer {
         margin-top: 5px;
         font-size: $footer-txt-s;
     }
-    color: #8e9ea9;
-    padding: 0 6em;
-    .row {
 
+    .row {
+     
         padding: 0;
         margin: 2em auto;
-        display: flex;
-        justify-content: space-between;
+        display: block;
+        justify-content: unset;
+        
+        @include breakpoint-tablet-2 {
+            padding: 0;
+            margin: 2em auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
         ul {
             margin: 0;
             padding: 0;
+            @include breakpoint-mobile-1 {
+                padding: 0;
+                margin: 2em 0;
+            }
         }
         ul li { 
             font-size: $footer-txt-s;
@@ -26,6 +48,11 @@ footer {
         
         .social {
             display: inline-block;
+            @include breakpoint-mobile-1 {
+                display: block;
+                margin: 1em 0 0 0;
+                text-align: center;
+            }
             margin-left: 150px;
             i {
                 font-size: $text-xl;
@@ -69,3 +96,5 @@ footer {
         margin-left: -0.4em;
     }
 }
+
+
