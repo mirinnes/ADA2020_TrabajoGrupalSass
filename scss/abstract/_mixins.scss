@@ -1,6 +1,7 @@
 //Aca vamos a hacer el BOTON ($color, $padding, $font-size)
 //Display: flex/center
 //propiedad upper case
+@import "./variables";
 
 @mixin breakpoint-mobile-1 {
     @media (min-width: 414px) {
@@ -40,3 +41,41 @@
 }
 
 
+<<<<<<< HEAD:scss/mixins/_mixins.scss
+=======
+@mixin upper-case {
+    text-transform: uppercase;
+}
+
+//Breakpoints
+@mixin breakpoint-mobile-1 {
+    @media (min-width: 414px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-tablet-1 {
+    //no deberia ser 768?
+    @media (min-width: 798px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-tablet-2 {
+    @media (min-width: 955px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-mobile-1 {
+    @media (min-width: 650px) {
+        @content;
+    }
+}
+>>>>>>> a4ba2aa0e39bfb608eccfa330b9c8a0523307026:scss/abstract/_mixins.scss

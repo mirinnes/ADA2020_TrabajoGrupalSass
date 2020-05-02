@@ -1,6 +1,12 @@
 @import "./abstract/variables";
-@import "./sections/cta";
-@import "./mixins/mixins";
+@import "./abstract/mixins";
+
+// Components
+@import "./componentes/anchor";
+@import "./componentes/buttons";
+
+// Sections
+@import "./sections/footer";
 
 body {
     font-family: $main-font;
