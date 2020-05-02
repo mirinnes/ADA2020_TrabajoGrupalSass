@@ -1,0 +1,37 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+
+
+
+
+
+
+
+.card {
+    margin: 30px 0;
+    @include breakpoint-mobile-1 { margin: 25px;}
+    @include card-size;
+    @include display-center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    h2, p {margin: 0;}
+    p {
+        font-size: Calc(#{$text-m} - 2px);
+    }
+    h2 {
+        margin-bottom: 20px;
+        font-size: $text-l;
+        font-weight: $semi-bold;
+    }
+    
+    i {
+        margin: 40px 0;
+        font-size: calc(#{$card-height-414px} - 220px);
+    }
+
+    &.azul {i {color: blue;} }
+    &.verde {i {color: green;} }
+    &.naranja {i {color: orange;} }
+
+}
