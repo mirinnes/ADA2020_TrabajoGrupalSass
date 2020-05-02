@@ -1,5 +1,31 @@
+@import "../scss/componentes/cards";
+@import "../scss/abstract/variables";
+
 body {
     margin: 0;
+    font-family: $main-font;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- Description -----------------*/
+.description {
+    background-color: $blanco;
+    height: fit-content;
+
+    @include display-center;
+    flex-direction: row;
+	flex-wrap: wrap;
+}
