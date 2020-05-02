@@ -26,13 +26,6 @@
     }
 }
 
-@mixin breakpoint-mobile-1 {
-    @media (min-width: 650px) {
-        @content;
-    }
-}
-
-
 @mixin boton ($color-boton, $boton-height, $padding-boton-top, $padding-boton-left, $font-size) {
     background-color: $color-boton;
     padding: $padding-boton-top $padding-boton-left $padding-boton-top  $padding-boton-left;
@@ -45,7 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+   
 }
 
 @mixin upper-case {
@@ -58,12 +51,4 @@
     height: $card-height-414px;
 
 }
-
-
-@mixin breakpoint-mobile-1 {
-    @media (min-width: 650px) {
-        @content;
-    }
-}
-
 
