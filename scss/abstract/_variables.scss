@@ -1,23 +1,24 @@
-//Colores
+// Colores
 $azul: #01affe;
 $verde: #99ce45;
+$verde-2: #6ea319; // SUGERENCIA: Hay un solo color verde. La persona que creo esta variable puede modificarla por $verde. 
 $negro: #3e4e5c;
 $blanco: #FFFF;
 $naranja: #fe8f4f;
 
-
-//Tamaños de texto
+// Tamaños de texto
 $text-xl: 28px;
+$text-ll:25px;
 $text-l: 20px;
 $text-m: 15px;
-$text-s: 12px; /* agregue esta.. La necesitaba el hero */
+$text-s: 12px; // ATENCION: MODIFICADO! "s" es ahora "xs" ... Quien alla utilizado anteriormnete s (9px) debe modificarla por xs.
 $text-xs: 9px;
-$text-boton-s: 10px;
-$text-boton-m: 15px;
-$text-boton-l: 20px;
+$text-boton-s: 10px; // SUGERENCIA: a $text-xs pueden colocarle el valor 10px y reutilizarlas en ambos casos. 
+$text-boton-m: 15px; // SUGERENCIA: Pueden quitar esta variable y utilizar $text-m -- tienen el mismo valor.
+$text-boton-l: 20px; // SUGERENCIA: Pueden quitar esta variable y utilizar $text-l -- tienen el mismo valor. 
+$footer-txt-s: 13px; // font size footer area ------ Tal vez puedas utilizar $text-s. La diferencia es mínima.
 
-
-//Fuente
+// Fuente
 $main-font: 'Montserrat', Arial, Helvetica, Tahoma, Verdana, sans-serif;
 
 //Font-weight:
@@ -25,11 +26,14 @@ $light: 300;
 $regular: 400;
 $bold: 600;
 
-
-/* Special font */
+// Special font
 $font-uppercase: uppercase;
-
 
 // Padding and Margin
 $padding-m: 10px;
 $margin-s: 6px;
+
+// Cards
+$card-width-414px: 323px;
+$card-height-414px: 360px;
+
