@@ -1,3 +1,8 @@
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
+  margin: 0; }
+/*---------------CTA------------*/
 @media (min-width: 414px) {
   .cta-button {
     background: #99ce45;
@@ -80,7 +85,7 @@ footer {
     border-top: 2px solid #eee;
     padding-top: 25px; }
 
-<<<<<<< HEAD
+
 .loader-opinions .loader {
   width: 30px;
   height: 2px;
@@ -233,7 +238,7 @@ footer {
         &:target ~ #slide-dos{
             display: none;
         }*/ }
-=======
+
 @media (min-width: 414px) {
   .cta {
     align-items: center;
@@ -248,6 +253,7 @@ footer {
     text-align: center;
     width: 45%; } }
 
+
 @media (min-width: 798px) {
   .cta {
     align-items: center;
@@ -261,6 +267,7 @@ footer {
     margin: 0 auto;
     text-align: center;
     width: 35%; } }
+
 
 @media (min-width: 955px) {
   .cta {
@@ -289,8 +296,73 @@ footer {
     margin: 0 auto;
     text-align: center;
     width: 40%; } }
->>>>>>> b2c5f26d68d80253c7a7f51bd0607e5343c1bc0a
 
-body {
-  font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
-  margin: 0; }
+
+
+/*---------------Footer------------*/
+footer {
+  color: #8e9ea9;
+  padding: 0 6em; }
+  footer .footer-link {
+    color: #01affe;
+    text-decoration: none; }
+  footer .row {
+    padding: 0;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between; }
+    footer .row ul {
+      padding: 0; }
+    footer .row ul li {
+      list-style: none; }
+    footer .row .social {
+      display: inline-block;
+      margin-left: 150px; }
+  footer .end {
+    border-top: 2px solid #eee;
+    padding-top: 25px; }
+
+
+
+/* --------------- Description -----------------*/
+.description {
+  background-color: #FFFF;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+                   /*-----------Cards----------*/
+.card {
+  margin: 30px 0;
+  width: 323px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column; }
+  @media (min-width: 650px) {
+    .card {
+      margin: 25px; } }
+  .card h2, .card p {
+    margin: 0; }
+  .card p {
+    font-size: Calc(15px - 2px); }
+  .card h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500; }
+  .card i {
+    margin: 40px 0;
+    font-size: calc(360px - 220px); }
+  .card.azul i {
+    color: blue; }
+  .card.verde i {
+    color: green; }
+  .card.naranja i {
+    color: orange; }
+
+
+
