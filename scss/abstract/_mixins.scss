@@ -32,8 +32,7 @@
 }
 
 @mixin breakpoint-tablet-1 {
-    //no deberia ser 768?
-    @media (min-width: 798px) {
+    @media (min-width: 768px) {
         @content;
     }
 }

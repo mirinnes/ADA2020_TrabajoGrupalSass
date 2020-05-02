@@ -1,3 +1,9 @@
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif; }
+
 footer {
   color: #8e9ea9;
   padding: 0 6em; }
@@ -19,6 +25,46 @@ footer {
   footer .end {
     border-top: 2px solid #eee;
     padding-top: 25px; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif; }
+
+.mainNav {
+  height: 90px;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #01affe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #FFFF;
+  font-size: 10px;
+  text-transform: uppercase; }
+  .mainNav a {
+    margin: 3px;
+    padding: 0 10px;
+    text-align: center; }
+    .mainNav a.right {
+      border-right: transparent; }
+    .mainNav a:hover {
+      color: rgba(17, 10, 112, 0.8);
+      text-transform: initial;
+      font-size: 15px; }
+    @media (min-width: 768px) {
+      .mainNav a {
+        border-right: solid 3px rgba(17, 10, 112, 0.2);
+        font-size: 15px;
+        padding: 0 15px; }
+        .mainNav a:hover {
+          font-size: 20px; } }
+  @media (min-width: 768px) {
+    .mainNav {
+      flex-direction: row; } }
 
 body {
   font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
