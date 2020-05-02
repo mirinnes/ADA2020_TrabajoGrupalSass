@@ -1,9 +1,19 @@
+//Abstracts
+@import "./abstract/variables";
+@import "./abstract/mixins";
+
+// Components
 @import "../scss/componentes/cards";
-@import "../scss/abstract/variables";
+@import "./componentes/anchor";
+@import "./componentes/buttons";
+
+// Sections
+@import "./sections/footer";
+
 
 body {
-    margin: 0;
     font-family: $main-font;
+    margin: 0;
 }
 
 

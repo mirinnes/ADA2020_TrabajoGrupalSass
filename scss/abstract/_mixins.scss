@@ -1,10 +1,5 @@
-@mixin boton ($color-boton, $boton-height, $padding-boton-top, $padding-boton-left, $font-size) {
-    background-color: $color-boton;
-    padding: $padding-boton-top, $padding-boton-left;
-    font-size: $font-size;
-    border-radius: 32px;  //??? esto no estoy segura q vaya a estar bien
-    height: $boton-height;
-}
+@import "./variables";
+
 //Breakpoints
 @mixin breakpoint-mobile-1 {
     @media (min-width: 414px) {
@@ -13,8 +8,7 @@
 }
 
 @mixin breakpoint-tablet-1 {
-    //no deberia ser 768?
-    @media (min-width: 798px) {
+    @media (min-width: 768px) {
         @content;
     }
 }
@@ -37,20 +31,29 @@
     }
 }
 
+@mixin boton ($color-boton, $boton-height, $padding-boton-top, $padding-boton-left, $font-size) {
+    background-color: $color-boton;
+    padding: $padding-boton-top $padding-boton-left $padding-boton-top  $padding-boton-left;
+    font-size: $font-size;
+    border-radius: 32px;  
+    height: $boton-height;
+}
 
 @mixin display-center {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
+    
 }
-
 
 @mixin upper-case {
     text-transform: uppercase;
 }
+
 
 @mixin card-size {
     width: $card-width-414px;
     height: $card-height-414px;
 
 }
+
