@@ -1,8 +1,67 @@
+// Aca vamos a hacer el BOTON ($color, $padding, $text-size)
+// display: flex/center
+// propiedad upper-case
 @import "./variables";
 
+@mixin boton ($color-boton, $boton-height, $padding-boton-top, $padding-boton-left, $text-size) {
+    background-color: $color-boton;
+    border-radius: 32px;  //??? esto no estoy segura q vaya a estar bien
+    font-size: $text-size;
+    height: $boton-height;
+    padding: $padding-boton-top, $padding-boton-left;
+}
 
-//Breakpoints
-@mixin breakpoint-mobile-1 {
+@mixin display-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin upper-case {
+    text-transform: uppercase;
+}
+
+// --- HERO --- //
+@mixin title-slide {
+    color: $blanco;
+    font-size: $text-l;
+    left: 50%;
+    position: absolute;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+} 
+
+@mixin p-slide {
+    color: $blanco;
+    font-size: $text-s;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+@mixin colorButton($backgroundcolor, $bordercolor, $fontcolor) {
+    background-color: $backgroundcolor;
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $bordercolor;
+        color: $fontcolor;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+// --- CARDS --- //
+@mixin card-size {
+    height: $card-height-414px;
+    width: $card-width-414px;
+}
+
+// --- SCREEN SIZES --- //
+@mixin breakpoint-mobile-2 {
     @media (min-width: 414px) {
         @content;
     }
@@ -26,29 +85,8 @@
     }
 }
 
-@mixin boton ($color-boton, $boton-height, $padding-boton-top, $padding-boton-left, $font-size) {
-    background-color: $color-boton;
-    padding: $padding-boton-top $padding-boton-left $padding-boton-top  $padding-boton-left;
-    font-size: $font-size;
-    border-radius: 32px;  
-    height: $boton-height;
+@mixin breakpoint-desktop-2 {
+    @media (min-width: 1200px) {
+        @content;
+    }
 }
-
-@mixin display-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-@mixin upper-case {
-    text-transform: uppercase;
-}
-
-
-@mixin card-size {
-    width: $card-width-414px;
-    height: $card-height-414px;
-
-}
-
