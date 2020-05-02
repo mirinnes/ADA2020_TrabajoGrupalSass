@@ -1,0 +1,71 @@
+@import "../abstract/variables";
+@import "../mixins/mixins";
+
+
+@include breakpoint-mobile-1 {
+    .cta{
+        align-items: center;
+        color: $negro;
+        display: flex;
+        flex-direction: column;
+        font-family: $main-font;
+        font-size: $text-s;
+        font-weight: $light;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        width: 45%;
+    }
+}
+
+
+
+@include breakpoint-tablet-1 {
+    .cta{
+        align-items: center;
+        color: $negro;
+        display: flex;
+        flex-direction: column;
+        font-family: $main-font;
+        font-size: $text-m;
+        font-weight: $light;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        width: 35%;
+    }
+}
+
+
+@include breakpoint-tablet-2 {
+    .cta{
+        align-items: center;
+        color: $negro;
+        display: flex;
+        flex-direction: column;
+        font-family: $main-font;
+        font-size: $text-m;
+        font-weight: $light;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        width: 38%;
+    }
+}
+
+
+@include breakpoint-desktop {
+    .cta{
+        align-items: center;
+        color: $negro;
+        display: flex;
+        flex-direction: column;
+        font-family: $main-font;
+        font-size: $text-m;
+        font-weight: $light;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        width: 40%;
+    }
+}

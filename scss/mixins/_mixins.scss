@@ -2,6 +2,27 @@
 //Display: flex/center
 //propiedad upper case
 
+@mixin breakpoint-mobile-1 {
+    @media (min-width: 414px) {
+        @content;
+    }
+}
+@mixin breakpoint-tablet-1 {
+    @media (min-width: 798px) {
+        @content;
+    }
+}
+@mixin breakpoint-tablet-2 {
+    @media (min-width: 955px) {
+        @content;
+    }
+}
+@mixin breakpoint-desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
 @mixin boton ($color-boton, $boton-height, $padding-boton-top, $padding-boton-left, $font-size) {
     background-color: $color-boton;
     padding: $padding-boton-top, $padding-boton-left;
@@ -19,6 +40,3 @@
 }
 
 
-@mixin upper-case {
-    text-transform: uppercase;
-}
