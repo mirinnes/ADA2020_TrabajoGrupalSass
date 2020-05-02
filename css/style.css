@@ -1,3 +1,6 @@
+body {
+  font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
+  margin: 0; }
 
 a {
   text-decoration: none;
@@ -5,12 +8,6 @@ a {
   cursor: pointer;
   font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif; }
 
-@media (min-width: 650px) {
-
-
-body {
-  font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
-  margin: 0; }
 /*---------------CTA------------*/
 @media (min-width: 414px) {
 
@@ -28,6 +25,20 @@ body {
     background: #6ea319;
     color: #FFFF; } }
 
+@media (min-width: 414px) {
+  .cta {
+    align-items: center;
+    color: #3e4e5c;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
+    font-size: 9px;
+    font-weight: 300;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 45%; } }
+
 @media (min-width: 798px) {
   .cta-button {
     background: #99ce45;
@@ -42,6 +53,20 @@ body {
   .cta-button:hover {
     background: #6ea319;
     color: #FFFF; } }
+
+@media (min-width: 798px) {
+  .cta {
+    align-items: center;
+    color: #3e4e5c;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 35%; } }
 
 @media (min-width: 955px) {
   .cta-button {
@@ -58,6 +83,20 @@ body {
     background: #6ea319;
     color: #FFFF; } }
 
+@media (min-width: 955px) {
+  .cta {
+    align-items: center;
+    color: #3e4e5c;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 38%; } }
+
 @media (min-width: 1024px) {
   .cta-button {
     background: #99ce45;
@@ -73,43 +112,58 @@ body {
     background: #6ea319;
     color: #FFFF; } }
 
-.loader-opinions {
-  width: auto; }
-  .loader-opinions .loader {
-    width: 30px;
-    height: 2px;
-    background-color: #ffffffbe;
-    margin-right: 5px;
-    display: inline-block; }
-    @media (min-width: 955px) {
-      .loader-opinions .loader {
-        width: 50px;
-        height: 2px; }
-        .loader-opinions .loader:hover {
-          background-color: #FFFF; } }
-
-footer {
-  color: #8e9ea9;
-  padding: 0 6em; }
-  footer .footer-link {
-    color: #01affe;
-    text-decoration: none; }
-  footer .row {
-    padding: 0;
-    margin: 2em auto;
+@media (min-width: 1024px) {
+  .cta {
+    align-items: center;
+    color: #3e4e5c;
     display: flex;
-    justify-content: space-between; }
-    footer .row ul {
-      padding: 0; }
-    footer .row ul li {
-      list-style: none; }
-    footer .row .social {
-      display: inline-block;
-      margin-left: 150px; }
-  footer .end {
-    border-top: 2px solid #eee;
-    padding-top: 25px; }
+    flex-direction: column;
+    font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 40%; } }
 
+
+/*----empieza el nav---*/
+.mainNav {
+  height: 90px;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #01affe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #FFFF;
+  font-size: 10px;
+  text-transform: uppercase; }
+  .mainNav a {
+    margin: 3px;
+    padding: 0 10px;
+    text-align: center; }
+    .mainNav a.right {
+      border-right: transparent; }
+    .mainNav a:hover {
+      color: rgba(17, 10, 112, 0.8);
+      text-transform: initial;
+      font-size: 15px; }
+    @media (min-width: 768px) {
+      .mainNav a {
+        border-right: solid 3px rgba(17, 10, 112, 0.2);
+        font-size: 15px;
+        padding: 0 15px; }
+        .mainNav a:hover {
+          font-size: 20px; } }
+  @media (min-width: 768px) {
+    .mainNav {
+      flex-direction: row; } }
+
+
+/*-----------Opinions agus--------------*/
 
 .loader-opinions {
   width: auto; }
@@ -286,90 +340,91 @@ footer {
       #opinions .loader-opinions {
         left: 50%; } }
 
-@media (min-width: 414px) {
-  .cta {
-    align-items: center;
-    color: #3e4e5c;
-    display: flex;
-    flex-direction: column;
-    font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
-    font-size: 9px;
-    font-weight: 300;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    width: 45%; } }
-
-
-@media (min-width: 798px) {
-  .cta {
-    align-items: center;
-    color: #3e4e5c;
-    display: flex;
-    flex-direction: column;
-    font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    width: 35%; } }
-
-
-@media (min-width: 955px) {
-  .cta {
-    align-items: center;
-    color: #3e4e5c;
-    display: flex;
-    flex-direction: column;
-    font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    width: 38%; } }
-
-@media (min-width: 1024px) {
-  .cta {
-    align-items: center;
-    color: #3e4e5c;
-    display: flex;
-    flex-direction: column;
-    font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    width: 40%; } }
-
-
-
 
 /*---------------Footer------------*/
-footer {
-  color: #8e9ea9;
-  padding: 0 6em; }
-  footer .footer-link {
-    color: #01affe;
-    text-decoration: none; }
-  footer .row {
-    padding: 0;
-    margin: 2em auto;
-    display: flex;
-    justify-content: space-between; }
-    footer .row ul {
-      padding: 0; }
-    footer .row ul li {
-      list-style: none; }
-    footer .row .social {
-      display: inline-block;
-      margin-left: 150px; }
-  footer .end {
-    border-top: 2px solid #eee;
-    padding-top: 25px; }
 
+@media (min-width: 414px) {
+  footer {
+    padding: 0 2em; } }
+
+@media (min-width: 768px) {
+  footer {
+    color: #8e9ea9;
+    padding: 0 6em; } }
+
+footer .footer-link {
+  color: #01affe;
+  text-decoration: none; }
+
+footer .summary {
+  margin-top: 5px;
+  font-size: 13px; }
+
+footer .row {
+  padding: 0;
+  margin: 2em auto;
+  display: block;
+  justify-content: unset; }
+  @media (min-width: 955px) {
+    footer .row {
+      padding: 0;
+      margin: 2em auto;
+      display: flex;
+      justify-content: space-between; } }
+  footer .row ul {
+    margin: 0;
+    padding: 0; }
+    @media (min-width: 414px) {
+      footer .row ul {
+        padding: 0;
+        margin: 2em 0; } }
+  footer .row ul li {
+    font-size: 13px;
+    list-style: none; }
+  footer .row .social {
+    display: inline-block;
+    margin-left: 150px; }
+    @media (min-width: 414px) {
+      footer .row .social {
+        display: block;
+        margin: 1em 0 0 0;
+        text-align: center; } }
+    footer .row .social i {
+      font-size: 28px; }
+
+footer .end {
+  border-top: 2px solid #eee;
+  font-size: 13px;
+  padding-top: 25px; }
+
+footer .caption {
+  color: #3e4e5c !important;
+  margin: 0; }
+
+footer .subscribe .email {
+  width: 76%;
+  font-size: 0.875em;
+  border: 0.125em solid #e4ebec;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  line-height: 2.8em;
+  padding: 0 1em; }
+
+
+footer .subscribe > .email + button {
+  width: 17%;
+  font-size: 0.875em;
+  border: 0;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  line-height: 3em;
+  padding: 0 1em;
+  text-align: center;
+  text-transform: uppercase;
+  background: #01affe;
+  color: #fff;
+  cursor: pointer;
+  margin-left: -0.4em; }
 
 
 /* --------------- Description -----------------*/
@@ -413,4 +468,5 @@ footer {
   .card.naranja i {
     color: orange; }}
   
+
 
