@@ -1,7 +1,6 @@
 @import "../abstract/variables";
 @import "../mixins/mixins";
 
-
 @include breakpoint-mobile-1 {
     .cta{
         align-items: center;

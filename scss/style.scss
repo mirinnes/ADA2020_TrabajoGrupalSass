@@ -1,12 +1,6 @@
-// Abstract
 @import "./abstract/variables";
-
-// Components
-@import "./componentes/buttons";
-
-// Sections
-@import "./sections/footer";
 @import "./sections/cta";
+@import "./mixins/mixins";
 
 body {
     font-family: $main-font;
