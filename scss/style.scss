@@ -1,12 +1,15 @@
+//Abstracts
 @import "./abstract/variables";
 @import "./abstract/mixins";
 
 // Components
+@import "../scss/componentes/cards";
 @import "./componentes/anchor";
 @import "./componentes/buttons";
 
 // Sections
 @import "./sections/footer";
+
 
 body {
     font-family: $main-font;
@@ -14,3 +17,25 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- Description -----------------*/
+.description {
+    background-color: $blanco;
+    height: fit-content;
+
+    @include display-center;
+    flex-direction: row;
+	flex-wrap: wrap;
+}
