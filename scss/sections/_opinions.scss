@@ -1,13 +1,188 @@
 @import "../abstract/variables";
-@import "../mixins/mixins";
+@import "../abstract/mixins";
+@import "../componentes/loader-opinions";
 
-.opinions{
-    height: 600px;
-    .slide-1{
+// opinions empieza aqui
+
+#opinions{
+    height: 260px;
+    /*height: 600px;*/
+    width: 100%;
+    position: relative;
+    
+    @include breakpoint-mobile-1{
+        
+    }
+
+    @include breakpoint-tablet-1{
+        height: 400px;
+    }
+
+    @include breakpoint-tablet-2{
+        height: 600px;
+        background-size: contain;
+    }
+
+    #slide-uno{
         height: 100%;
-        background-image: url(../../img/main-slide-4.png);
+        width: 100%;
+        background-image: url(../img/main-slide-4.png);
         background-size: cover;
-        padding-left: 250px;
-        padding-top: 50px;
+        padding-left: 35px;
+        padding-top: 15px;
+        color:$blanco;
+
+        @include breakpoint-tablet-1{
+            padding-left: 150px;
+            padding-top: 30px;
+            background-size: cover;
+        }
+
+        @include breakpoint-tablet-2{
+            padding-left: 250px;
+            padding-top: 45px;
+            background-size: 100%;
+        }
+
+        &:target ~ #slide-dos{
+            display: none;
+        }
+
+        .slide-tittle{
+            color:$verde;
+            font-size: 10px;
+            font-weight: $regular;
+            margin-bottom: 20px;
+
+            @include breakpoint-tablet-1{
+                font-size: $text-m;
+                margin-bottom: 30px;
+            }
+
+            @include breakpoint-tablet-2{
+                font-size: 18px;
+                margin-bottom: 50px;
+            }
+        }
+        .article-1{
+            font-size: $text-m;
+            width: 100%;
+            height: 100px;
+            margin: 0;
+
+            @include breakpoint-mobile-1{
+                width: 380px; 
+            }
+
+            @include breakpoint-tablet-1{
+                font-size: $text-l;
+                width: $regular;
+                font-weight: 500; 
+            }
+
+            @include breakpoint-tablet-2{
+                font-size: $text-ll;
+                width: 450px;
+                font-weight: 500; 
+                height: 200px;
+            }
+            
+        }
+        .article-2{
+            /*margin-top: 50px;*/
+            margin-top: 26px;
+            font-size: 10px;
+
+            @include breakpoint-tablet-2{
+                margin-top: 50px;
+            }
+
+            /*@include breakpoint-desktop {
+                margin-top: 50px;
+            }*/
+        }
+    }
+
+    #slide-dos{
+        height: 100%;
+        width: 100%;
+        background-image: url(../img/main-slide-5.png);
+        background-size: cover;
+        padding-left: 35px;
+        padding-top: 15px;
+        color:$blanco;
+        .slide-tittle2{
+            color:$verde;
+            font-size: 10px;
+            font-weight: $regular;
+            margin-bottom: 20px;
+
+            @include breakpoint-tablet-1{
+                font-size: $text-m;
+                margin-bottom: 30px;
+            }
+
+            @include breakpoint-tablet-2{
+                font-size: 18px;
+                margin-bottom: 50px;
+            }
+        }
+        .article2-1{
+            font-size: 12px;
+            width: 100%;
+            height: 100px;
+            margin: 0;
+
+            @include breakpoint-mobile-1{
+                width: 380px; 
+            }
+
+            @include breakpoint-tablet-1{
+                height: auto;
+                font-size: $text-l;
+                width: $regular;
+                font-weight: 500; 
+            }
+
+            @include breakpoint-tablet-2{
+                font-size: $text-ll;
+                width: 450px;
+                font-weight: 500; 
+            }
+         
+        }
+        .article2-2{
+            /*margin-top: 50px;*/
+            margin-top: 26px;
+            font-size: 10px;
+
+            @include breakpoint-tablet-2{
+                margin-top: 50px;
+            }
+
+            /*@include breakpoint-desktop {
+                margin-top: 50px;
+            }*/
+        }
+
+        &:target ~ #slide-uno{
+            display: none;
+        }
+    }
+
+    .loader-opinions{
+        width:100%;
+        height: 5px;
+        position: absolute;
+        bottom:10px;
+        left: 50%;
+
+        /*&:target ~ #slide-uno{
+            display: block;
+        }
+
+        &:target ~ #slide-dos{
+            display: none;
+        }*/
     }
 }
