@@ -1,2 +1,25 @@
+footer {
+  color: #8e9ea9;
+  padding: 0 6em; }
+  footer .footer-link {
+    color: #01affe;
+    text-decoration: none; }
+  footer .row {
+    padding: 0;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between; }
+    footer .row ul {
+      padding: 0; }
+    footer .row ul li {
+      list-style: none; }
+    footer .row .social {
+      display: inline-block;
+      margin-left: 150px; }
+  footer .end {
+    border-top: 2px solid #eee;
+    padding-top: 25px; }
+
 body {
+  font-family: "Montserrat", Arial, Helvetica, Tahoma, Verdana, sans-serif;
   margin: 0; }
