@@ -1,0 +1,78 @@
+@import "../abstract/variables";
+@import "../mixins/mixins";
+
+
+@include breakpoint-mobile-1 {
+    .cta-button{
+        background: $verde;
+        border: none;
+        border-radius: 50px;
+        box-sizing: border-box;
+        color: $blanco;
+        cursor: pointer;
+        font-size: $text-boton-m;
+        height: 40px;
+        width: 150px;
+    }
+    .cta-button:hover{
+        background: $verde-2;
+        color: $blanco;
+    }
+}
+
+
+@include breakpoint-tablet-1 {
+    .cta-button{
+        background: $verde;
+        border: none;
+        border-radius: 50px;
+        box-sizing: border-box;
+        color: $blanco;
+        cursor: pointer;
+        font-size: $text-boton-m;
+        height: 40px;
+        width: 150px;
+    }
+    .cta-button:hover{
+        background: $verde-2;
+        color: $blanco;
+    }
+}
+
+
+@include breakpoint-tablet-2 {
+    .cta-button{
+        background: $verde;
+        border: none;
+        border-radius: 50px;
+        box-sizing: border-box;
+        color: $blanco;
+        cursor: pointer;
+        font-size: $text-boton-m;
+        height: 40px;
+        width: 150px;
+    }
+    .cta-button:hover{
+        background: $verde-2;
+        color: $blanco;
+    }
+}
+
+
+@include breakpoint-desktop {
+    .cta-button{
+        background: $verde;
+        border: none;
+        border-radius: 50px;
+        box-sizing: border-box;
+        color: $blanco;
+        cursor: pointer;
+        font-size: $text-boton-l;
+        height: 50px;
+        width: 220px;
+    }
+    .cta-button:hover{
+        background: $verde-2;
+        color: $blanco;
+    }
+}

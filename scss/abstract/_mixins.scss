@@ -3,9 +3,30 @@
 //propiedad upper case
 @import "./variables";
 
+@mixin breakpoint-mobile-1 {
+    @media (min-width: 414px) {
+        @content;
+    }
+}
+@mixin breakpoint-tablet-1 {
+    @media (min-width: 798px) {
+        @content;
+    }
+}
+@mixin breakpoint-tablet-2 {
+    @media (min-width: 955px) {
+        @content;
+    }
+}
+@mixin breakpoint-desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
 @mixin boton ($color-boton, $boton-height, $padding-boton-top, $padding-boton-left, $font-size) {
     background-color: $color-boton;
-    padding: $padding-boton-top, $padding-boton-left;
+    padding: $padding-boton-top $padding-boton-left $padding-boton-top  $padding-boton-left;
     font-size: $font-size;
     border-radius: 32px;  //??? esto no estoy segura q vaya a estar bien
     height: $boton-height;
@@ -20,6 +41,8 @@
 }
 
 
+<<<<<<< HEAD:scss/mixins/_mixins.scss
+=======
 @mixin upper-case {
     text-transform: uppercase;
 }
@@ -55,3 +78,4 @@
         @content;
     }
 }
+>>>>>>> a4ba2aa0e39bfb608eccfa330b9c8a0523307026:scss/abstract/_mixins.scss
