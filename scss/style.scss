@@ -6,10 +6,15 @@
 @import "../scss/componentes/cards";
 @import "./componentes/anchor";
 @import "./componentes/buttons";
+@import "./componentes/loader-opinions";
 
 // Sections
 @import "./sections/footer";
+
+@import "./sections/opinions";
+
 @import "./sections/cta";
+
 
 
 body {

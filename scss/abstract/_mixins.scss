@@ -1,5 +1,6 @@
 @import "./variables";
 
+
 //Breakpoints
 @mixin breakpoint-mobile-1 {
     @media (min-width: 414px) {
@@ -31,6 +32,7 @@
     }
 }
 
+
 @mixin boton ($color-boton, $boton-height, $padding-boton-top, $padding-boton-left, $font-size) {
     background-color: $color-boton;
     padding: $padding-boton-top $padding-boton-left $padding-boton-top  $padding-boton-left;
@@ -56,4 +58,12 @@
     height: $card-height-414px;
 
 }
+
+
+@mixin breakpoint-mobile-1 {
+    @media (min-width: 650px) {
+        @content;
+    }
+}
+
 

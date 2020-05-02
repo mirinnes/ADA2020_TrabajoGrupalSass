@@ -1,0 +1,19 @@
+@import "../abstract/variables";
+
+.loader-opinions{
+    .loader{
+        width: 30px;
+        height: 2px;
+        background-color: #ffffffbe;
+        margin-right: 5px;
+        display: inline-block;
+        &:hover{
+            background-color: $blanco;
+        }
+
+        @include breakpoint-tablet-2{
+            width: 50px;
+            height: 2px;
+        }
+    }
+}
