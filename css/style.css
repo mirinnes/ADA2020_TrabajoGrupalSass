@@ -10,6 +10,7 @@ a {
 
 /*---------------CTA------------*/
 @media (min-width: 414px) {
+
   .cta-button {
     background: #99ce45;
     border: none;
@@ -160,7 +161,25 @@ a {
   @media (min-width: 768px) {
     .mainNav {
       flex-direction: row; } }
-/*_____opinions agus____*/
+
+
+/*-----------Opinions agus--------------*/
+
+.loader-opinions {
+  width: auto; }
+  .loader-opinions .loader {
+    width: 30px;
+    height: 2px;
+    background-color: #ffffffbe;
+    margin-right: 5px;
+    display: inline-block; }
+    @media (min-width: 955px) {
+      .loader-opinions .loader {
+        width: 50px;
+        height: 2px; }
+        .loader-opinions .loader:hover {
+          background-color: #FFFF; } }
+
 
 .loader-opinions .loader {
   width: 30px;
@@ -175,21 +194,20 @@ a {
       width: 50px;
       height: 2px; } }
 
+
 #opinions {
   height: 260px;
-  /*height: 600px;*/
-  width: 100%;
   position: relative; }
   @media (min-width: 798px) {
     #opinions {
       height: 400px; } }
   @media (min-width: 955px) {
     #opinions {
-      height: 600px;
+      height: 520px;
       background-size: contain; } }
   #opinions #slide-uno {
     height: 100%;
-    width: 100%;
+    width: auto;
     background-image: url(../img/main-slide-4.png);
     background-size: cover;
     padding-left: 35px;
@@ -202,9 +220,10 @@ a {
         background-size: cover; } }
     @media (min-width: 955px) {
       #opinions #slide-uno {
+        width: auto;
         padding-left: 250px;
         padding-top: 45px;
-        background-size: 100%; } }
+        background-size: cover; } }
     #opinions #slide-uno:target ~ #slide-dos {
       display: none; }
     #opinions #slide-uno .slide-tittle {
@@ -225,7 +244,7 @@ a {
       width: 100%;
       height: 100px;
       margin: 0; }
-      @media (min-width: 414px) {
+      @media (min-width: 650px) {
         #opinions #slide-uno .article-1 {
           width: 380px; } }
       @media (min-width: 798px) {
@@ -248,8 +267,10 @@ a {
             }*/ }
       @media (min-width: 955px) {
         #opinions #slide-uno .article-2 {
-          margin-top: 50px; } }
+          margin-top: 50px;
+          font-size: 15px; } }
   #opinions #slide-dos {
+    display: none;
     height: 100%;
     width: 100%;
     background-image: url(../img/main-slide-5.png);
@@ -275,7 +296,7 @@ a {
       width: 100%;
       height: 100px;
       margin: 0; }
-      @media (min-width: 414px) {
+      @media (min-width: 650px) {
         #opinions #slide-dos .article2-1 {
           width: 380px; } }
       @media (min-width: 798px) {
@@ -302,11 +323,11 @@ a {
     #opinions #slide-dos:target ~ #slide-uno {
       display: none; }
   #opinions .loader-opinions {
-    width: 100%;
+    width: auto;
     height: 5px;
     position: absolute;
     bottom: 10px;
-    left: 50%;
+    left: 40%;
     /*&:target ~ #slide-uno{
             display: block;
         }
@@ -314,6 +335,10 @@ a {
         &:target ~ #slide-dos{
             display: none;
         }*/ }
+
+    @media (min-width: 798px) {
+      #opinions .loader-opinions {
+        left: 50%; } }
 
 
 /*---------------Footer------------*/
@@ -385,6 +410,7 @@ footer .subscribe .email {
   line-height: 2.8em;
   padding: 0 1em; }
 
+
 footer .subscribe > .email + button {
   width: 17%;
   font-size: 0.875em;
@@ -419,8 +445,9 @@ footer .subscribe > .email + button {
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
-  flex-direction: column; }
-  @media (min-width: 650px) {
+  flex-direction: column; 
+}
+@media(min-width: 650px) {
     .card {
       margin: 25px; } }
   .card h2, .card p {
@@ -439,8 +466,7 @@ footer .subscribe > .email + button {
   .card.verde i {
     color: green; }
   .card.naranja i {
-    color: orange; }
-
-
+    color: orange; }}
+  
 
 

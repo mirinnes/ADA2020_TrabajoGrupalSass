@@ -6,8 +6,6 @@
 
 #opinions{
     height: 260px;
-    /*height: 600px;*/
-    width: 100%;
     position: relative;
     
     @include breakpoint-mobile-1{
@@ -19,13 +17,13 @@
     }
 
     @include breakpoint-tablet-2{
-        height: 600px;
+        height: 520px;
         background-size: contain;
     }
 
     #slide-uno{
         height: 100%;
-        width: 100%;
+        width: auto;
         background-image: url(../img/main-slide-4.png);
         background-size: cover;
         padding-left: 35px;
@@ -39,9 +37,10 @@
         }
 
         @include breakpoint-tablet-2{
+            width: auto;
             padding-left: 250px;
             padding-top: 45px;
-            background-size: 100%;
+            background-size: cover;
         }
 
         &:target ~ #slide-dos{
@@ -95,6 +94,7 @@
 
             @include breakpoint-tablet-2{
                 margin-top: 50px;
+                font-size: $text-m;
             }
 
             /*@include breakpoint-desktop {
@@ -104,6 +104,7 @@
     }
 
     #slide-dos{
+        display: none;
         height: 100%;
         width: 100%;
         background-image: url(../img/main-slide-5.png);
@@ -171,11 +172,15 @@
     }
 
     .loader-opinions{
-        width:100%;
+        width:auto;
         height: 5px;
         position: absolute;
         bottom:10px;
-        left: 50%;
+        left: 40%;
+
+        @include breakpoint-tablet-1{
+            left: 50%;
+        }
 
         /*&:target ~ #slide-uno{
             display: block;
