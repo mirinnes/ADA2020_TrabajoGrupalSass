@@ -3,21 +3,15 @@
 @import "./abstract/mixins";
 
 // Components
-@import "../scss/componentes/cards";
+@import "./componentes/cards";
 @import "./componentes/anchor";
 @import "./componentes/buttons";
-@import "./componentes/loader-opinions";
 
 // Sections
-@import "./sections/hero";
-@import "./sections/footer";
+@import "./sections/sliders";
 @import "./sections/nav";
-
-@import "./sections/opinions";
-
 @import "./sections/cta";
-
-
+@import "./sections/footer";
 
 body {
     font-family: $main-font;
