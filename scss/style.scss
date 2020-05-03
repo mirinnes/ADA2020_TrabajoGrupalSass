@@ -1,10 +1,29 @@
+//Abstracts
 @import "./abstract/variables";
-@import "./sections/header";
-@import "./abstract/mixins"; 
+@import "./abstract/mixins";
+
+// Components
+@import "./componentes/cards";
 @import "./componentes/anchor";
+@import "./componentes/buttons";
+
+// Sections
+@import "./sections/header";
+@import "./sections/sliders";
+@import "./sections/nav";
+@import "./sections/cta";
+@import "./sections/footer";
 
 body {
+    font-family: $main-font;
     margin: 0;
 }
 
-
+/* --------------- Description -----------------*/
+.description { // Qué es esto? No entiendo jaja. 
+    background-color: $blanco;
+    height: fit-content;
+    @include display-center;
+    flex-direction: row;
+	  flex-wrap: wrap;
+}

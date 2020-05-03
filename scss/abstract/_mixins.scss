@@ -1,31 +1,107 @@
-@mixin boton ($color-boton, $boton-height, $padding-boton-top, $padding-boton-left, $font-size) {
+// Aca vamos a hacer el BOTON ($color, $padding, $text-size)
+// display: flex/center
+// propiedad upper-case
+@import "./variables";
+
+// --- HEADER --- //
+@mixin boton ($color-boton, $boton-height, $padding-boton-top, $padding-boton-left, $text-size) {
     background-color: $color-boton;
-    padding: $padding-boton-top, $padding-boton-left;
-    font-size: $font-size;
     border-radius: 32px;  //??? esto no estoy segura q vaya a estar bien
+    font-size: $text-size;
     height: $boton-height;
+    padding: $padding-boton-top, $padding-boton-left;
 }
- 
+
 @mixin display-center {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 @mixin upper-case {
     text-transform: uppercase;
 }
 
+// --- SLIDERS --- //
+@mixin title-slide {
+    color: $blanco;
+    font-size: $text-l;
+    left: 50%;
+    position: absolute;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+@mixin h3-slide {
+    color: $blanco;
+    font-size: $text-m;
+    font-weight: $semi-bold;
+    left: 50%;
+    position: absolute;
+    top: 41%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+ 
+@mixin p-slide {
+    color: $blanco;
+    font-size: $text-s;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+@mixin small-slide {
+    color: $blanco;
+    font-size: $text-s;
+    text-transform: $font-uppercase;
+    left: 50%;
+    position: absolute;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+@mixin colorButton($backgroundcolor, $bordercolor, $fontcolor) {
+    background-color: $backgroundcolor;
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $bordercolor;
+        color: $fontcolor;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+// --- CARDS --- //
+@mixin card-size {
+    height: $card-height-414px;
+    width: $card-width-414px;
+}
+
+// --- SCREEN SIZES --- //
 @mixin breakpoint-mobile-1 {
+    @media (min-width: 320px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-mobile-2 {
     @media (min-width: 414px) {
         @content;
     }
 }
+
 @mixin breakpoint-tablet-1 {
-    @media (min-width: 798px) {
+    @media (min-width: 768px) {
         @content;
     }
 }
+
 @mixin breakpoint-tablet-2 {
     @media (min-width: 955px) {
         @content;
@@ -38,5 +114,8 @@
     }
 }
 
-
-
+@mixin breakpoint-desktop-2 {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
