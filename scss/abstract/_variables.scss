@@ -5,6 +5,7 @@ $verde-2: #6ea319; // SUGERENCIA: Hay un solo color verde. La persona que creo e
 $negro: #3e4e5c;
 $blanco: #FFFF;
 $naranja: #fe8f4f;
+$blanco-transparente: rgba(255, 255, 255, .75);
 
 // Tamaños de texto
 $text-xl: 28px;
@@ -27,14 +28,20 @@ $regular: 400;
 $semi-bold: 500;
 $bold: 600;
 
-// Special font
-$font-uppercase: uppercase;
+// Paddings o margins standard
+$p-xsmall: 5px;
+$p-small: 10px;
+$p-med: 15px;
+$p-large: 20px;
+$p-xlarge: 30px;
 
-// Padding and Margin
+// Padding and Margin // Utilizadas para el slider. Después las modifico para utilizar las de arriba.
 $padding-m: 10px;
 $margin-s: 6px;
+
+// Special font
+$font-uppercase: uppercase;
 
 // Cards
 $card-width-414px: 323px;
 $card-height-414px: 360px;
-

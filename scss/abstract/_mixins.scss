@@ -3,6 +3,7 @@
 // propiedad upper-case
 @import "./variables";
 
+// --- HEADER --- //
 @mixin boton ($color-boton, $boton-height, $padding-boton-top, $padding-boton-left, $text-size) {
     background-color: $color-boton;
     border-radius: 32px;  //??? esto no estoy segura q vaya a estar bien

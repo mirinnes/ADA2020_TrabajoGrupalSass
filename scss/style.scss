@@ -8,6 +8,7 @@
 @import "./componentes/buttons";
 
 // Sections
+@import "./sections/header";
 @import "./sections/sliders";
 @import "./sections/nav";
 @import "./sections/cta";
@@ -18,28 +19,11 @@ body {
     margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------------- Description -----------------*/
-.description {
+.description { // Qué es esto? No entiendo jaja. 
     background-color: $blanco;
     height: fit-content;
-
     @include display-center;
     flex-direction: row;
-	flex-wrap: wrap;
+	  flex-wrap: wrap;
 }
-
