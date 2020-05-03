@@ -1,174 +1,190 @@
-<!--Pagina:-->
-<!--https://codepen.io/w3core/full/EVdGoO-->
+<!-- Página que recreamos:
+https://codepen.io/w3core/full/EVdGoO -->
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo grupal</title>
-    <script src="https://kit.fontawesome.com/0f770b8f06.js" crossorigin="anonymous"></script> <!---MI script de font-awesome Pato-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabajo grupal</title>
+        <!-- style -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- font family -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+    </head>
+    <body>
+        
+        <!----------------Header-------------->
 
-    <!----------------Header-------------->
-    
-    <!----------------Hero-------------->
 
-    <section class="slider-hero">
-        <input class="slide-open" type="radio" id="slide-1" name="slide" hidden="" checked="checked">          
-        <div class="slide-container slide1">
-            <img src="./img/main-slide-1.png">
-            <h1>Grow your business globally with Playphone</h1>
-            <p>Maximize distribution and monetization by publishing your games 
-                on the leading games-only platform in emerging markets.</p>
-            <a class="button text-button" href="">Get started</a>
-        </div>
-            
-        <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
-        <div class="slide-container slide2">
-            <img src="./img/main-slide-2.png">
-            <h1>Increase engagement with unique battle and tournament capability</h1>
-            <p>Drive more engagement for your games when players fight it out against 
-                one another in battles. When players compete, your game wins!</p>
-            <a class="button text-button" href="">Integrate now</a>
-        </div>
-            
-        <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
-        <div class="slide-container slide3">
-            <img src="./img/main-slide-3.png">
-            <h1>Launch with us in Taiwan this December and wacth your revenues grow!</h1>
-            <p>Playphone has partnered with Gamania, the top game publisher in Taiwan,
-                to help monetize your games in the #4 Android gaming market.</p>
-            <a class="button text-button" href="">Publish now</a>
-        </div>
-            
-        <ol class="menu-slider">
-            <li><label for="slide-1" class="slide-stick"></label></li>
-            <li><label for="slide-2" class="slide-stick"></label></li>
-            <li><label for="slide-3" class="slide-stick"></label></li>
-        </ol>
-      
-        <div class="loader"></div>               
-    </section>
-
-    <!----------------Navegation-------------->
-    <nav class="mainNav">
-        <a href="#">Getting Started</a>
-        <a href="#">Create Account</a>
-        <a href="#">Dowload Sdk</a>
-        <a href="#" class="right">Tutorials</a>
-    </nav>
-
-    <!---------------Description Cards-------------->
-    <section class="description">
-        <section class="card azul">
-            <i class="fas fa-tools"></i>
-            <h2>Built specially for mobile game developers</h2>
-            <p>The Playphone SDK is built for mobile game developers.
-               It is extremely lightweight and takes minutes to integrate. Further, you need to integrate only once.
-            </p>
+        
+        <!---------------- Slider 1 / Hero -------------->
+        <section class="slider">
+            <input class="slide-open" type="radio" id="slide-1" name="slide-h" hidden="" checked="checked">          
+            <div class="slide-container slide1">
+                <img src="./img/main-slide-1.png">
+                <h1>Grow your business globally with Playphone</h1>
+                <p>Maximize distribution and monetization by publishing your games 
+                    on the leading games-only platform in emerging markets.</p>
+                <a class="button text-button" href="">Get started</a>
+            </div>
+                
+            <input class="slide-open" type="radio" id="slide-2" name="slide-h" aria-hidden="true" hidden="">
+            <div class="slide-container slide2">
+                <img src="./img/main-slide-2.png">
+                <h1>Increase engagement with unique battle and tournament capability</h1>
+                <p>Drive more engagement for your games when players fight it out against 
+                    one another in battles. When players compete, your game wins!</p>
+                <a class="button text-button" href="">Integrate now</a>
+            </div>
+                
+            <input class="slide-open" type="radio" id="slide-3" name="slide-h" aria-hidden="true" hidden="">
+            <div class="slide-container slide3">
+                <img src="./img/main-slide-3.png">
+                <h1>Launch with us in Taiwan this December and wacth your revenues grow!</h1>
+                <p>Playphone has partnered with Gamania, the top game publisher in Taiwan,
+                    to help monetize your games in the #4 Android gaming market.</p>
+                <a class="button text-button" href="">Publish now</a>
+            </div>
+                
+            <ol class="menu-slider">
+                <li><label for="slide-1" class="slide-stick"></label></li>
+                <li><label for="slide-2" class="slide-stick"></label></li>
+                <li><label for="slide-3" class="slide-stick"></label></li>
+            </ol>
+        
+            <div class="loader"></div>               
         </section>
-        <section class="card verde">
-            <i class="fas fa-tools"></i>
-            <h2>Reach highly targeted mobile gamers</h2>
-            <p>Playphone is a games-only network fostering an ecosystem of highly qualified users that love playing
-                mobile games. You won't find a better way to reach untapped mobile gamers globally
-            </p>
-        </section>
-        <section class="card naranja">
-            <i class="fas fa-tools"></i>
-            <h2>Go beyond Google Play</h2>
-            <p>In high-growth emerging markets, we partner with the leading local OEMs, carriers and distributors in to drive
-               installs for your games where Google Play can't
-            </p>
-        </section>
-    </section>
 
-    <!---------------Opinions-------------->
-    <section id="opinions">
-        <div id="slide-uno">
-            <h2 class="slide-tittle">WHAT THEY SAY</h2>
-            <p class="article-1" >Integration the Playphone SDK was extremely developer friendly. It's lean and easy to integrate and test. We got it out there in less than a day.</p>
-            <p class="article-2"> 
-                ALOK KUMAR
-                <br> DIRECTOR OF GAME DEVELOPMENT
-                <br>JUNE SOFTWARE INC
-            </p> 
-        </div>
 
-        <div id="slide-dos">
-            <h2 class="slide-tittle2">WHAT THEY SAY</h2>
-            <p class="article2-1">Playphone integration has been easy with its simple SDK and we've been able to leverage its real-time dashboard to show results immediately. Playphone's support team is very efficient and is always available with answers and advice. Because of our Leaderboard integration we are seeing strong revenue conversion %'s.</p>
-            <p class="article2-2"> 
-            KEVIN ROBERTS
-            <br>CEO
-            <br>MOBILE MOB
-            </p> 
-        </div>
-
-        <nav class="loader-opinions">
-            <a class="loader" href=#slide-uno></a>
-            <a class="loader" href=#slide-dos></a>
+        <!---------------- Navegation -------------->
+        <nav class="mainNav">
+            <a href="#">Getting Started</a>
+            <a href="#">Create Account</a>
+            <a href="#">Dowload Sdk</a>
+            <a href="#" class="right">Tutorials</a>
         </nav>
 
-    </section>
 
+        <!--------------- Description Cards -------------->
+        <section class="description">
+            <section class="card azul">
+                <i class="fas fa-tools"></i>
+                <h2>Built specially for mobile game developers</h2>
+                <p>The Playphone SDK is built for mobile game developers.
+                It is extremely lightweight and takes minutes to integrate. Further, 
+                you need to integrate only once.</p>
+            </section>
 
-
-    <!---------------Footer-------------->
-    <footer>
-   
-    <div class="cta">
-        <h1>Get started in 10 minutes, with only 10 lines of code!</h1>
-        <button class="cta-button" type="button">Get Started</button>
-    </div>
-       
-        <div class="row">
-            <ul>
-                <li><a class="footer-link" href="#">Get Started</a></li>
-                <li><a class="footer-link" href="#">Company</a></li>
-                <li><a class="footer-link" href="#">Blog</a></li>
-            </ul>
-           
-            <ul>
-                <li><a class="footer-link" href="#">About Us</a></li>
-                <li><a class="footer-link" href="#">Our Team</a></li>
-                <li><a class="footer-link" href="#">Careers</a></li>
-                <li><a class="footer-link" href="#">Press</a></li>
-            </ul>
-           
-            <ul>
-                <li><a class="footer-link" href="#">Get The SDK</a></li>
-                <li><a class="footer-link" href="#">Documentation</a></li>
-                <li><a class="footer-link" href="#">Support</a></li>
-            </ul>
+            <section class="card verde">
+                <i class="fas fa-tools"></i>
+                <h2>Reach highly targeted mobile gamers</h2>
+                <p>Playphone is a games-only network fostering an ecosystem of highly 
+                    qualified users that love playing mobile games. You won't find a better 
+                    way to reach untapped mobile gamers globally.</p>
+            </section>
             
-            <form class="col subscribe" action="" method="get">
-            <h4 class="caption">Subscribe for updates</h4>
-            <p class="summary">Stay informed on Playphone news, announcements and developer features!</p>
-            <input class="email" type="email" placeholder="Enter your email">
-            <button type="submit">Submit</button>
-            </form>
+            <section class="card naranja">
+                <i class="fas fa-tools"></i>
+                <h2>Go beyond Google Play</h2>
+                <p>In high-growth emerging markets, we partner with the leading local OEMs,
+                    carriers and distributors in to drive installs for your games where Google 
+                    Play can't.</p>
+            </section>
+        </section>
+
+        
+        <!--------------- Slider 2 / Opinions -------------->
+        <section class="slider">
+            <input class="slide-open" type="radio" id="slide-4" name="slide-o" aria-hidden="true" hidden="" checked="checked">
+            <div class="slide-container">
+                <img src="./img/main-slide-4.png">
+                <p class="special">What they say</p>
+                <h3>Integration the Playphone SDK was extremely developer friendly.
+                    It's lean and easy to integrate and test. We got it out there in less
+                    than a day.</h3>
+                <small>Alok Kumar <br/> 
+                    Director of game development <br/> 
+                    June Software Inc
+                </small>      
+            </div>
+
+            <input class="slide-open" type="radio" id="slide-5" name="slide-o" aria-hidden="true" hidden="">
+            <div class="slide-container">
+                <img src="./img/main-slide-5.png">
+                <p class="special">What they say</p>
+                <h3>Playphone integration has been easy with its simple SDK and we've 
+                    been able to leverage its real-time dashboard to show results immediately. 
+                    Playphone's support team is very efficient and is always available with
+                    answers and advice. Because of our Leaderboard integration we are seeing 
+                    strong revenue conversion %'s.</h3>
+                <small>Kevin Roberts <br/> 
+                    CEO <br/> 
+                    Mobile mob
+                </small>
+            </div>
+            
+            <ol class="menu-slider">
+                <li><label for="slide-4" class="slide-stick-diferent"></label></li>
+                <li><label for="slide-5" class="slide-stick-diferent"></label></li>
+            </ol>
+            
+            <div class="loader"></div> 
+        </section>
+
+
+        <!--------------- Footer -------------->
+        <footer>
+    
+        <div class="cta">
+            <h1>Get started in 10 minutes, with only 10 lines of code!</h1>
+            <button class="cta-button" type="button">Get Started</button>
         </div>
-
-        <div class="row end">
-            <div class="copyright">
-                <span>© 2015 Playphone Inc. All rights reserved.</span>
-                <a class="footer-link" href="#">Terms of Use</a>
-                <a class="footer-link" href="#">EULA</a>
-                <a class="footer-link" href="#">Privacy Policy</a>
+        
+            <div class="row">
+                <ul>
+                    <li><a class="footer-link" href="#">Get Started</a></li>
+                    <li><a class="footer-link" href="#">Company</a></li>
+                    <li><a class="footer-link" href="#">Blog</a></li>
+                </ul>
+            
+                <ul>
+                    <li><a class="footer-link" href="#">About Us</a></li>
+                    <li><a class="footer-link" href="#">Our Team</a></li>
+                    <li><a class="footer-link" href="#">Careers</a></li>
+                    <li><a class="footer-link" href="#">Press</a></li>
+                </ul>
+            
+                <ul>
+                    <li><a class="footer-link" href="#">Get The SDK</a></li>
+                    <li><a class="footer-link" href="#">Documentation</a></li>
+                    <li><a class="footer-link" href="#">Support</a></li>
+                </ul>
+                
+                <form class="col subscribe" action="" method="get">
+                <h4 class="caption">Subscribe for updates</h4>
+                <p class="summary">Stay informed on Playphone news, announcements and developer features!</p>
+                <input class="email" type="email" placeholder="Enter your email">
+                <button type="submit">Submit</button>
+                </form>
             </div>
-            <div class="social">
-                <a class="footer-link" href="#" ><i class="fab fa-youtube"></i></a>
-                <a class="footer-link" href="#" ><i class="fab fa-twitter"></i></a>
-                <a class="footer-link" href="#" ><i class="fab fa-facebook"></i></a>
-            </div>
-        </div>    
-    </footer>
 
-</body>
+            <div class="row end">
+                <div class="copyright">
+                    <span>© 2015 Playphone Inc. All rights reserved.</span>
+                    <a class="footer-link" href="#">Terms of Use</a>
+                    <a class="footer-link" href="#">EULA</a>
+                    <a class="footer-link" href="#">Privacy Policy</a>
+                </div>
+                <div class="social">
+                    <a class="footer-link" href="#" ><i class="fab fa-youtube"></i></a>
+                    <a class="footer-link" href="#" ><i class="fab fa-twitter"></i></a>
+                    <a class="footer-link" href="#" ><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>    
+        </footer>
+
+    </body>
 </html>

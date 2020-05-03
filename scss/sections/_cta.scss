@@ -1,5 +1,5 @@
 @import "../abstract/variables";
-@import "../mixins/mixins";
+@import "../abstract/mixins";
 
 @include breakpoint-mobile-1 {
     .cta{
