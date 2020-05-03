@@ -73,17 +73,17 @@
                 }
             }
             @include breakpoint-mobile-2{
-                top: 38%
+                top: 50%
             }
             @include breakpoint-tablet-1 {
                 font-size: 17px;
                 left: 43%;
-                top: 44%;
+                top: 54%;
                 width: 54%;
             } 
             @include breakpoint-desktop {
                 left: 35%;
-                top: 40%;
+                top: 50%;
                 width: 40%;
             } 
             @include breakpoint-desktop-2 {
