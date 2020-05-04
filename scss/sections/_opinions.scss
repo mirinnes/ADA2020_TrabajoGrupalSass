@@ -5,189 +5,312 @@
 // opinions empieza aqui
 
 #opinions{
-    height: 260px;
+    height: auto;
+    margin:0;
+    padding:0;
     position: relative;
-    
-    @include breakpoint-mobile-1{
+    ul, li{
+        padding: 0;
+        margin: 0;
+        list-style: none inside;
+        box-sizing: border-box;
+    }
+
+    ul{
+        &.slider{
+            position: relative; 
+            li{
+                border: 0;
+                position: absolute;
+                left:0;
+                top:0;
+                opacity:0;
+                transition: opacity 0.6s linear;
+                &:first-child{
+                    opacity: 1;
+                }
+
+                &:target{
+                    opacity: 1;
+                }
+
+                &#slide-uno{
+                    overflow: hidden;
+                    position: relative;
+                    img{
+                        height: 400px;
+                        max-width: none;
+                        z-index: -1;
+                        @include breakpoint-tablet-2{
+                            max-width: 100%;
+                            display: block;
+                            height: 500px;
+                        }
+                        @include breakpoint-desktop-2{
+                            height: 600px;
+                        }
+                    }
+                    @include breakpoint-tablet-1{
+                       
+                    }
+
+                    @include breakpoint-tablet-2{
+                        overflow: visible;
+                        width: 100%;
+                        
+                    }
+                    .slide-tittle, .article-1, .article-2{
+                        position: absolute;
+                        
+                        padding-left: 35px;
+                        padding-top: 15px;
+                        color:$blanco;
+                    }
+                    .slide-tittle{
+                        top:15px;
+                        left:0;
+                        color:$verde;
+                        font-size: 10px;
+                        font-weight: $regular;
+                        margin-bottom: 20px;
+                        
+                        @include breakpoint-mobile-2{
+                            font-size: 13px;
+                        }
+
+                        @include breakpoint-tablet-1{
+                            font-size: $text-m;
+                            margin-bottom: 30px;
+                        }
+
+                        @include breakpoint-tablet-2{
+                            font-size: 18px;
+                            margin-bottom: 50px;
+                        }
+
+                        @include breakpoint-desktop{
+                            padding-left: 50px;
+                        }
+                    }
+                    .article-1{
+                        top:50px;
+                        left:0;
+                        font-size: $text-m;
+                        width: 150px;
+                        height: 100px;
+                        margin: 0;
+
+                        @include breakpoint-mobile-2{
+                            top:55px;
+                            width:200px;
+                            font-size: 18px;
+                        }
+
+                        @include breakpoint-tablet-1{
+                            top:65px;
+                            width:350px;
+                            font-size: $text-l;
+                            font-weight: $regular;
+                            font-weight: 500; 
+                        }
+
+                        @include breakpoint-tablet-2{
+                            top:80px;
+                            font-size: $text-ll;
+                            width: 450px;
+                            font-weight: 500; 
+                            height: 200px;
+                        }
+
+                        @include breakpoint-desktop{
+                            padding-left: 50px;
+                            top:80px;
+                            font-size: $text-ll;
+                            width: 450px;
+                            font-weight: 500; 
+                            height: 200px;
+                        }
+                        
+                    }
+                    .article-2{
+                        bottom:25px;
+                        left:0;
+                        /*margin-top: 50px;*/
+                        margin-top: 26px;
+                        font-size: 10px;
+
+                        @include breakpoint-tablet-2{
+                            margin-top: 50px;
+                            font-size: $text-m;
+                        }
+
+                        @include breakpoint-desktop{
+                            padding-left: 50px;
+                        }
+
+                    }
+                    /*@include breakpoint-mobile-1{
         
-    }
+                    }
+                
+                    @include breakpoint-tablet-1{
+                        height: 400px;
+                    }
+                
+                    @include breakpoint-tablet-2{
+                        height: 520px;
 
-    @include breakpoint-tablet-1{
-        height: 400px;
-    }
+                    }  */      
+                }
 
-    @include breakpoint-tablet-2{
-        height: 520px;
-        background-size: contain;
-    }
+                &#slide-dos{
+                    height: 100%;
+                    width: 100%;
+                    overflow: hidden;
+                    img{
+                        height: 400px;
+                        max-width: none;
+                        @include breakpoint-tablet-2{
+                            max-width: 100%;
+                            display: block;
+                            height: 500px;
+                        }
 
-    #slide-uno{
-        height: 100%;
-        width: auto;
-        background-image: url(../img/main-slide-4.png);
-        background-size: cover;
-        padding-left: 35px;
-        padding-top: 15px;
-        color:$blanco;
+                        @include breakpoint-desktop-2{
+                            height: 600px;
+                        }
+                    }
+                    .slide-tittle2, .article2-1, .article2-2{
+                        position: absolute;
 
-        @include breakpoint-tablet-1{
-            padding-left: 150px;
-            padding-top: 30px;
-            background-size: cover;
-        }
+                        padding-left: 35px;
+                        padding-top: 15px;
+                        color:$blanco;
+                    }
+                
+                    .slide-tittle2{
+                        top:15px;
+                        left:0;
+                        color:$verde;
+                        font-size: 10px;
+                        font-weight: $regular;
+                        margin-bottom: 20px;
 
-        @include breakpoint-tablet-2{
-            width: auto;
-            padding-left: 250px;
-            padding-top: 45px;
-            background-size: cover;
-        }
+                        @include breakpoint-mobile-2{
+                            font-size: 13px;
+                        }
 
-        &:target ~ #slide-dos{
-            display: none;
-        }
+                        @include breakpoint-tablet-1{
+                            font-size: $text-m;
+                            margin-bottom: 30px;
+                        }
 
-        .slide-tittle{
-            color:$verde;
-            font-size: 10px;
-            font-weight: $regular;
-            margin-bottom: 20px;
+                        @include breakpoint-tablet-2{
+                            font-size: 18px;
+                            margin-bottom: 50px;
+                        }
 
-            @include breakpoint-tablet-1{
-                font-size: $text-m;
-                margin-bottom: 30px;
-            }
+                        @include breakpoint-desktop{
+                            padding-left: 50px;
+                        }
+                        
+                    }
+                    .article2-1{
+                        font-size: 12px;
+                        width: 150px;
+                        height: 100px;
+                        margin: 0;
+                        top:50px;
+                        left:0;
 
-            @include breakpoint-tablet-2{
-                font-size: 18px;
-                margin-bottom: 50px;
-            }
-        }
-        .article-1{
-            font-size: $text-m;
-            width: 100%;
-            height: 100px;
-            margin: 0;
+                        @include breakpoint-mobile-2{
+                            top:55px;
+                            width:300px;
+                            font-size: 18px;
+                        }
 
-            @include breakpoint-mobile-1{
-                width: 380px; 
-            }
+                        @include breakpoint-tablet-1{
+                            top:65px;
+                            width:400px;
+                            font-size: $text-l;
+                            font-weight: $regular;
+                            font-weight: 500; 
+                        }
 
-            @include breakpoint-tablet-1{
-                font-size: $text-l;
-                width: $regular;
-                font-weight: 500; 
-            }
+                        @include breakpoint-tablet-2{
+                            top:80px;
+                            font-size: $text-ll;
+                            width: 500px;
+                            font-weight: 500; 
+                            height: 200px;
+                        }
 
-            @include breakpoint-tablet-2{
-                font-size: $text-ll;
-                width: 450px;
-                font-weight: 500; 
-                height: 200px;
-            }
-            
-        }
-        .article-2{
-            /*margin-top: 50px;*/
-            margin-top: 26px;
-            font-size: 10px;
+                        @include breakpoint-desktop{
+                            padding-left: 50px;
+                            top:80px;
+                            font-size: $text-ll;
+                            width: 550px;
+                            font-weight: 500; 
+                            height: 200px;
+                        }
+                    
+                    }
+                    .article2-2{
+                        bottom:25px;
+                        left:0;
+                        /*margin-top: 50px;*/
+                        margin-top: 26px;
+                        font-size: 10px;
+                        @include breakpoint-tablet-2{
+                            margin-top: 50px;
+                            font-size: $text-m;
+                        }
 
-            @include breakpoint-tablet-2{
-                margin-top: 50px;
-                font-size: $text-m;
-            }
+                        @include breakpoint-desktop{
+                            padding-left: 50px;
+                        }
 
-            /*@include breakpoint-desktop {
-                margin-top: 50px;
-            }*/
-        }
-    }
-
-    #slide-dos{
-        display: none;
-        height: 100%;
-        width: 100%;
-        background-image: url(../img/main-slide-5.png);
-        background-size: cover;
-        padding-left: 35px;
-        padding-top: 15px;
-        color:$blanco;
-        .slide-tittle2{
-            color:$verde;
-            font-size: 10px;
-            font-weight: $regular;
-            margin-bottom: 20px;
-
-            @include breakpoint-tablet-1{
-                font-size: $text-m;
-                margin-bottom: 30px;
-            }
-
-            @include breakpoint-tablet-2{
-                font-size: 18px;
-                margin-bottom: 50px;
-            }
-        }
-        .article2-1{
-            font-size: 12px;
-            width: 100%;
-            height: 100px;
-            margin: 0;
-
-            @include breakpoint-mobile-1{
-                width: 380px; 
-            }
-
-            @include breakpoint-tablet-1{
-                height: auto;
-                font-size: $text-l;
-                width: $regular;
-                font-weight: 500; 
-            }
-
-            @include breakpoint-tablet-2{
-                font-size: $text-ll;
-                width: 450px;
-                font-weight: 500; 
-            }
-         
-        }
-        .article2-2{
-            /*margin-top: 50px;*/
-            margin-top: 26px;
-            font-size: 10px;
-
-            @include breakpoint-tablet-2{
-                margin-top: 50px;
-            }
-
-            /*@include breakpoint-desktop {
-                margin-top: 50px;
-            }*/
-        }
-
-        &:target ~ #slide-uno{
-            display: none;
-        }
+                    } 
+                }
+            }   
+        }      
     }
 
     .loader-opinions{
-        width:auto;
-        height: 5px;
         position: absolute;
-        bottom:10px;
-        left: 40%;
+        height: 20px;
+        width: 100%;
+        /*z-index: 5;*/
+        bottom: 5px;
 
+        @include breakpoint-tablet-2{
+            bottom:7px;
+        }
+
+        @include breakpoint-desktop-2{
+            bottom:10px;
+        }
+        
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        
+    }
+
+    .loader{
+        bottom: 2px; 
         @include breakpoint-tablet-1{
-            left: 50%;
+            bottom: 2px;
         }
 
-        /*&:target ~ #slide-uno{
-            display: block;
+        @include breakpoint-tablet-2{
+            bottom:0px;
         }
 
-        &:target ~ #slide-dos{
-            display: none;
-        }*/
+        
     }
 }
