@@ -5,7 +5,7 @@
 // opinions empieza aqui
 
 #opinions{
-    height: 260px;
+    height: auto;
     margin:0;
     padding:0;
     position: relative;
@@ -18,13 +18,14 @@
 
     ul{
         &.slider{
-            position: relative;        
+            position: relative; 
             li{
                 border: 0;
                 position: absolute;
                 left:0;
                 top:0;
                 opacity:0;
+                transition: opacity 0.6s linear;
                 &:first-child{
                     opacity: 1;
                 }
@@ -34,17 +35,29 @@
                 }
 
                 &#slide-uno{
+                    overflow: hidden;
                     position: relative;
                     img{
-                        max-width: 100%;
+                        height: 400px;
+                        max-width: none;
                         z-index: -1;
+                        @include breakpoint-tablet-2{
+                            max-width: 100%;
+                            display: block;
+                            height: 500px;
+                        }
+                        @include breakpoint-desktop-2{
+                            height: 600px;
+                        }
                     }
                     @include breakpoint-tablet-1{
                        
                     }
 
                     @include breakpoint-tablet-2{
-                       
+                        overflow: visible;
+                        width: 100%;
+                        
                     }
                     .slide-tittle, .article-1, .article-2{
                         position: absolute;
@@ -54,13 +67,16 @@
                         color:$blanco;
                     }
                     .slide-tittle{
-                        top:0;
+                        top:15px;
                         left:0;
                         color:$verde;
                         font-size: 10px;
                         font-weight: $regular;
                         margin-bottom: 20px;
                         
+                        @include breakpoint-mobile-2{
+                            font-size: 13px;
+                        }
 
                         @include breakpoint-tablet-1{
                             font-size: $text-m;
@@ -71,26 +87,44 @@
                             font-size: 18px;
                             margin-bottom: 50px;
                         }
+
+                        @include breakpoint-desktop{
+                            padding-left: 50px;
+                        }
                     }
                     .article-1{
-                        top:35px;
+                        top:50px;
                         left:0;
                         font-size: $text-m;
-                        width: 100%;
+                        width: 150px;
                         height: 100px;
                         margin: 0;
 
-                        @include breakpoint-mobile-1{
-                            width: 380px; 
+                        @include breakpoint-mobile-2{
+                            top:55px;
+                            width:200px;
+                            font-size: 18px;
                         }
 
                         @include breakpoint-tablet-1{
+                            top:65px;
+                            width:350px;
                             font-size: $text-l;
-                            width: $regular;
+                            font-weight: $regular;
                             font-weight: 500; 
                         }
 
                         @include breakpoint-tablet-2{
+                            top:80px;
+                            font-size: $text-ll;
+                            width: 450px;
+                            font-weight: 500; 
+                            height: 200px;
+                        }
+
+                        @include breakpoint-desktop{
+                            padding-left: 50px;
+                            top:80px;
                             font-size: $text-ll;
                             width: 450px;
                             font-weight: 500; 
@@ -108,6 +142,10 @@
                         @include breakpoint-tablet-2{
                             margin-top: 50px;
                             font-size: $text-m;
+                        }
+
+                        @include breakpoint-desktop{
+                            padding-left: 50px;
                         }
 
                     }
@@ -128,9 +166,19 @@
                 &#slide-dos{
                     height: 100%;
                     width: 100%;
-                    
+                    overflow: hidden;
                     img{
-                        max-width: 100%;
+                        height: 400px;
+                        max-width: none;
+                        @include breakpoint-tablet-2{
+                            max-width: 100%;
+                            display: block;
+                            height: 500px;
+                        }
+
+                        @include breakpoint-desktop-2{
+                            height: 600px;
+                        }
                     }
                     .slide-tittle2, .article2-1, .article2-2{
                         position: absolute;
@@ -141,12 +189,16 @@
                     }
                 
                     .slide-tittle2{
-                        top:0;
+                        top:15px;
                         left:0;
                         color:$verde;
                         font-size: 10px;
                         font-weight: $regular;
                         margin-bottom: 20px;
+
+                        @include breakpoint-mobile-2{
+                            font-size: 13px;
+                        }
 
                         @include breakpoint-tablet-1{
                             font-size: $text-m;
@@ -157,30 +209,49 @@
                             font-size: 18px;
                             margin-bottom: 50px;
                         }
+
+                        @include breakpoint-desktop{
+                            padding-left: 50px;
+                        }
+                        
                     }
                     .article2-1{
                         font-size: 12px;
-                        width: 100%;
+                        width: 150px;
                         height: 100px;
                         margin: 0;
-                        top:35px;
+                        top:50px;
                         left:0;
 
-                        @include breakpoint-mobile-1{
-                            width: 380px; 
+                        @include breakpoint-mobile-2{
+                            top:55px;
+                            width:300px;
+                            font-size: 18px;
                         }
 
                         @include breakpoint-tablet-1{
-                            height: auto;
+                            top:65px;
+                            width:400px;
                             font-size: $text-l;
-                            width: $regular;
+                            font-weight: $regular;
                             font-weight: 500; 
                         }
 
                         @include breakpoint-tablet-2{
+                            top:80px;
                             font-size: $text-ll;
-                            width: 450px;
+                            width: 500px;
                             font-weight: 500; 
+                            height: 200px;
+                        }
+
+                        @include breakpoint-desktop{
+                            padding-left: 50px;
+                            top:80px;
+                            font-size: $text-ll;
+                            width: 550px;
+                            font-weight: 500; 
+                            height: 200px;
                         }
                     
                     }
@@ -190,9 +261,13 @@
                         /*margin-top: 50px;*/
                         margin-top: 26px;
                         font-size: 10px;
-
                         @include breakpoint-tablet-2{
                             margin-top: 50px;
+                            font-size: $text-m;
+                        }
+
+                        @include breakpoint-desktop{
+                            padding-left: 50px;
                         }
 
                     } 
@@ -202,19 +277,40 @@
     }
 
     .loader-opinions{
+        position: absolute;
         height: 20px;
         width: 100%;
-        position: absolute;
-        bottom:2px;
+        /*z-index: 5;*/
+        bottom: 5px;
+
+        @include breakpoint-tablet-2{
+            bottom:7px;
+        }
+
+        @include breakpoint-desktop-2{
+            bottom:10px;
+        }
+        
         ul{
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        @include breakpoint-tablet-1{
+        
+        
+    }
 
+    .loader{
+        bottom: 2px; 
+        @include breakpoint-tablet-1{
+            bottom: 2px;
         }
+
+        @include breakpoint-tablet-2{
+            bottom:0px;
+        }
+
         
     }
 }
