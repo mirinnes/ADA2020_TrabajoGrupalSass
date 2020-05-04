@@ -1,12 +1,11 @@
 @import "../abstract/variables";
 @import "../abstract/mixins";
 
-
 .button {
     border: none;
     border-radius: 20px;
     left: 33%;
-    padding: $padding-m;
+    padding: $p-small;
     position: absolute;
     top: 77%;
     transform: translate(-50%, -50%);
