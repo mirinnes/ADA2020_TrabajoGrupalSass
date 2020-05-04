@@ -43,35 +43,8 @@
                 width: 36%;
             }
         } 
-        h3 {
-            @include h3-slide;
-            @include breakpoint-tablet-1 {
-                font-size: 17px;
-                left: 48%;
-                top: 41%;
-                width: 64%;
-            } 
-            @include breakpoint-desktop {
-                font-size: $text-l;
-                left: 38%;
-                width: 45%;
-            } 
-            @include breakpoint-desktop-2 {
-                left: 29%;
-                width: 30%;
-            }
-        }
         p {
             @include p-slide;
-            &.special {
-                color: $verde;
-                text-transform: $font-uppercase;
-                top: 10%;
-                @include breakpoint-tablet-1 {
-                    font-size: $text-m;
-                    top: 16%;
-                }
-            }
             @include breakpoint-mobile-2{
                 top: 50%
             }
@@ -89,18 +62,6 @@
             @include breakpoint-desktop-2 {
                 left: 34%;
                 width: 40%;
-            }
-        }
-        small {
-            @include small-slide;
-            @include breakpoint-tablet-1 {
-                font-size: $text-m;
-                left: 36%;
-                top: 75%;
-                width: 40%;
-            }
-            @include breakpoint-desktop-2 {
-                left: 34%;
             }
         }
         &.slide1 {
@@ -147,11 +108,6 @@
                 @include breakpoint-desktop {
                     width: 45px;
                 }                
-            }
-            .slide-stick-diferent {
-                @include breakpoint-mobile-1 {
-                    width: 45px;
-                }     
             }
         }
     }

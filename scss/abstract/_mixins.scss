@@ -22,24 +22,13 @@
     text-transform: uppercase;
 }
 
-// --- SLIDERS --- //
+// --- SLIDER --- //
 @mixin title-slide {
     color: $blanco;
     font-size: $text-l;
     left: 50%;
     position: absolute;
     top: 30%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-}
-
-@mixin h3-slide {
-    color: $blanco;
-    font-size: $text-m;
-    font-weight: $semi-bold;
-    left: 50%;
-    position: absolute;
-    top: 41%;
     transform: translate(-50%, -50%);
     width: 80%;
 }
@@ -52,17 +41,6 @@
     top: 55%;
     transform: translate(-50%, -50%);
     width: 70%;
-}
-
-@mixin small-slide {
-    color: $blanco;
-    font-size: $text-s;
-    text-transform: $font-uppercase;
-    left: 50%;
-    position: absolute;
-    top: 80%;
-    transform: translate(-50%, -50%);
-    width: 80%;
 }
 
 @mixin colorButton($backgroundcolor, $bordercolor, $fontcolor) {
