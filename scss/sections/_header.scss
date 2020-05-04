@@ -1,17 +1,70 @@
-@import "../mixins/mixins";
+@import "../abstract/mixins";
 @import "../abstract/variables";
+@import "../componentes/anchor";
 
 
 //header:position fixed
 
 
-.div-que-contiene-boton-y-login {
+// .div-que-contiene-boton-y-login {
 
-    .boton {
-        //boton ($color-boton, $boton-height, $padding-boton-top, $padding-boton-left, $font-size)
-        //@include boton( )
-    }
-
-
-
+//     .boton {
+//         //boton ($color-boton, $boton-height, $padding-boton-top, $padding-boton-left, $font-size)
+//         //@include boton( )
+//     }
+// }
+.mainHeader{
+    width: 100%;
+    padding: $p-med $p-large;
+    z-index: 1;
+    background-color: $blanco;
+    border-bottom: 1px solid #e7e7e7;
+    @include display-center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+        img{
+            width: 150px;
+        }
+        .singUpIn{
+            @include display-center;
+                a{
+                    @include display-center;
+                    padding: 0, p-med;
+                    &.create{
+                        display:none;
+                        @include boton ($verde, 30px, $p-small, $p-med, $text-boton-s);
+                        color: $blanco;
+                        font-weight: $bold;
+                        width: 150px;
+                        border: solid 2px $verde;
+                        margin-right: 10px;
+                        @include upper-case;
+                        @include breakpoint-tablet-1{
+                            display: flex;
+                        }
+                        &:hover{
+                             background-color: transparent;
+                             color: $verde;   
+                        }
+                    }
+                    &.login{
+                        @include boton (transparent, 30px, $p-small, $p-med, $text-boton-m);
+                        color: $azul;
+                        font-weight: $bold;
+                        border: solid 2px transparent;
+                        &:hover{
+                            border: solid 2px $azul;
+                            width: 100px;
+                        }
+                        .persona{
+                            padding: $p-small;
+                        }  
+                        span{
+                            padding-right: $p-small;
+                        } 
+                    }
+                }
+        
+        }
 }

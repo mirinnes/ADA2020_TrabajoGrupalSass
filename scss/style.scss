@@ -3,45 +3,29 @@
 @import "./abstract/mixins";
 
 // Components
-@import "../scss/componentes/cards";
+@import "./componentes/cards";
 @import "./componentes/anchor";
 @import "./componentes/buttons";
 @import "./componentes/loader-opinions";
 
 // Sections
-@import "./sections/footer";
-
+@import "./sections/header";
+@import "./sections/slider";
+@import "./sections/nav";
 @import "./sections/opinions";
-
 @import "./sections/cta";
-
-
+@import "./sections/footer";
 
 body {
     font-family: $main-font;
     margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------------- Description -----------------*/
-.description {
+.description { // Qué es esto? No entiendo jaja. 
     background-color: $blanco;
     height: fit-content;
-
     @include display-center;
     flex-direction: row;
-	flex-wrap: wrap;
+	  flex-wrap: wrap;
 }

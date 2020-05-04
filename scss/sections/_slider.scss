@@ -1,0 +1,114 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+@import "../componentes/loader";
+@import "../componentes/button";
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    .slide-open:checked + .slide-container {
+        opacity: 1;
+        position: static;
+    }
+    .slide-container {
+        opacity: 0;
+        position: absolute;
+        transition: opacity 0.6s linear;
+        img {
+            display: block;
+            height: 400px;
+            width: 100vw;
+            @include breakpoint-tablet-1 {
+                height: 400px; 
+            }
+            @include breakpoint-desktop {
+                height: 570px; 
+            } 
+        }
+        h1 {
+            @include title-slide;
+            @include breakpoint-tablet-1 {
+                font-size: 25px;
+                left: 50%;
+                width: 68%;
+            } 
+            @include breakpoint-desktop {
+                font-size: 30px;
+                left: 40%;
+                width: 50%;
+            } 
+            @include breakpoint-desktop-2 {
+                left: 32%;
+                width: 36%;
+            }
+        } 
+        p {
+            @include p-slide;
+            @include breakpoint-mobile-2{
+                top: 50%
+            }
+            @include breakpoint-tablet-1 {
+                font-size: 17px;
+                left: 43%;
+                top: 54%;
+                width: 54%;
+            } 
+            @include breakpoint-desktop {
+                left: 35%;
+                top: 50%;
+                width: 40%;
+            } 
+            @include breakpoint-desktop-2 {
+                left: 34%;
+                width: 40%;
+            }
+        }
+        &.slide1 {
+            .button {
+                @include colorButton ($azul, $azul, $azul);
+            } 
+        }
+        &.slide2 {
+            .button {
+                @include colorButton ($naranja, $naranja, $naranja);
+            } 
+        }
+        &.slide3 {
+            .button {
+                @include colorButton ($verde, $verde, $verde);
+            } 
+        }            
+    }
+    .menu-slider {
+        left: 50%;
+        position: absolute;
+        top: 86%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        @include breakpoint-tablet-1 {
+            width: 18%;
+        }  
+        @include breakpoint-desktop {
+            top: 90%; 
+        }
+        li {
+            display: inline-block;
+            margin: 0 $margin-s;
+            .slide-stick, .slide-stick-diferent {
+                background-color: transparent;
+                border-bottom: 2px solid $blanco;
+                cursor: pointer;
+                display: inline-block;
+                height: 10px;
+                width: 30px;
+                &:hover {
+                    border-bottom: 2px solid #aaaaaa;
+                } 
+                @include breakpoint-desktop {
+                    width: 45px;
+                }                
+            }
+        }
+    }
+}

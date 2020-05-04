@@ -1,0 +1,41 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+@import "../componentes/anchor";
+
+.mainNav{
+    height: 90px;
+    width: 100%;
+    padding: 15px 0;
+    background-color: $azul;
+    @include display-center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: $blanco;
+    font-size: $text-boton-s;
+    @include upper-case;
+    a{
+        margin:3px;
+        padding: 0 10px;
+        text-align: center;
+        &.right{
+            border-right: transparent;
+        }
+        &:hover{
+            color: rgba(17, 10, 112, 0.8);
+            text-transform: initial;
+            font-size: $text-boton-m;
+            
+        }
+        @include breakpoint-tablet-1{
+            border-right: solid 3px rgba(17, 10, 112, 0.2);
+            font-size: $text-boton-m;
+            padding: 0 15px;
+            &:hover{
+                font-size: $text-boton-l;
+            }
+        }
+    }
+    @include breakpoint-tablet-1{
+        flex-direction: row;
+    }  
+}
